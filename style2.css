@@ -1,0 +1,33 @@
+.student-listings, .messages {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .student-card, .message {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .student-card h3, .message p {
+    margin: 5px 0;
+  }
+  
+  .student-card button, .message button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .student-card button:hover, .message button:hover {
+    background: #555;
+  }
+  

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Tutor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Dynamic username display after login
+    function updateUsername(username) {
+      const userSection = document.getElementById('user-section');
+      userSection.innerHTML = `<span>Welcome, ${username}</span>`;
+    }
+
+    // Simulating a user login for demonstration
+    function simulateLogin() {
+      updateUsername('JohnDoe'); // Replace 'JohnDoe' with dynamic username from backend
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">Find My Tutor</div>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+      <div id="user-section"></div> <!-- Placeholder for username -->
+    </nav>
+  </header>
+
+  <section class="search-bar">
+    <form action="#" method="GET">
+      <input type="text" name="query" placeholder="Subject, Tutor, Location, etc." required>
+      <button type="submit" >Search</button>
+      <a href="search.html">Search</a>
+    </form>
+  </section>
+
+  <section class="hero">
+    <h1>Connecting Tutors and Students Seamlessly</h1>
+    <p>Find the best tutors near you or start sharing your knowledge today. Your learning journey starts here!</p>
+    <button onclick="location.href='tutor.html'">Find Tutors</button>
+    <button onclick="location.href='signup.html'">Sign Up</button>
+  </section>
+
+  <section class="nearby-tutors" id="tutors">
+    <h2>Nearby Tutors</h2>
+    <div class="tutor-cards">
+      <div class="tutor-card">
+        <h3>John Doe</h3>
+        <p>Mathematics Expert</p>
+        <p>⭐⭐⭐⭐⭐ (4.9)</p>
+        <p>Location: New Delhi</p>
+        <button onclick="location.href='tutor-details.html'">View Profile</button>
+      </div>
+      <div class="tutor-card">
+        <h3>Jane Smith</h3>
+        <p>Science & Chemistry</p>
+        <p>⭐⭐⭐⭐ (4.8)</p>
+        <p>Location: Mumbai</p>
+        <button onclick="location.href='tutor-details.html'">View Profile</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Find My Tutor. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
